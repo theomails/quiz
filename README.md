@@ -1,7 +1,7 @@
 # quiz
-###Quiz - Build your own Picture quiz!
+### Quiz - Build your own Picture quiz!
 
-###Here's the 3-step process to make your own amazing picture quiz!
+### Here's the 3-step process to make your own amazing picture quiz!
 
  1. Build an interesting collection of pictures, organized into folders based on the categories.
  2. Drop `quiz.jar` into the same folder
@@ -13,4 +13,4 @@ Here's an example. There is a collection of pictures organized into folders in t
 
 Gather around your desk or screen-share on your favourite online meeting app to play with your friends!
  
-Happy Quizzing!
+### Happy Quizzing!
