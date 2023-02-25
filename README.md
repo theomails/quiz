@@ -31,8 +31,8 @@ Gather around your desk or screen-share on your favourite online meeting app to 
 #### Building and Running the project
 
  1. Click on `Maven Update Project` to ensure that project `pom.xml` settings are in sync with your IDE settings.
- 2. Run `Maven Install` to build the jar files in `/target` folder and them install the jars into the local maven repo.
- 3. Copy the `quiz-<version>-jar-with-dependencies.jar' file from the `/target` folder to a QUIZ folder. Rename this file as `quiz.jar` for convenience.
+ 2. Run `Maven Install` to build the jar files into `/target` folder and then have them installed into the local maven repo.
+ 3. Copy the `quiz-<version>-jar-with-dependencies.jar` file from the `/target` folder to a QUIZ folder. Rename this file as `quiz.jar` for convenience.
  4. Drop all the categorized pictures as folders right next to `quiz.jar`.
  5. Double click on `quiz.jar` to start the app.
  
