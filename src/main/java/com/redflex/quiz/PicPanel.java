@@ -5,6 +5,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.io.File;
 import java.io.FileFilter;
+import java.util.regex.Pattern;
 
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
@@ -18,12 +19,13 @@ import net.miginfocom.swing.MigLayout;
 
 public class PicPanel extends JPanel{
 	private static final long serialVersionUID = 1L;
-	
+	private static final Pattern IMAGE_PATTERN = Pattern.compile("(?i).+\\.(jpg|jpeg|png|gif|bmp|wbmp)$");
+
 	public PicPanel(File topicFolder) {
 		pics = topicFolder.listFiles(new FileFilter() {
 		    @Override
 		    public boolean accept(File file) {
-		        return file.isFile() && !file.getName().startsWith(".");
+		        return file.isFile() && !file.getName().startsWith(".") && IMAGE_PATTERN.matcher(file.getName()).matches();
 		    }
 		});
 		for(File pic:pics) {

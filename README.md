@@ -14,6 +14,10 @@ Gather around your desk or screen-share on your favourite online meeting app to 
  
 ### Happy Quizzing!
 
+### Commands
+
+cp ./target/quiz*-with-dependencies.jar c:/WORK/PNR/FolderQuiz/
+
 #### The finer details:
 
  1. The folders which are siblings to `quiz.jar` are considered as _Categories_. They are presented as `tabs` in the Quiz app.

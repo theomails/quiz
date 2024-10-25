@@ -26,7 +26,11 @@ public class ScorePanel extends JPanel{
 	
 	public void init() {
 		setLayout(new MigLayout("insets 0","[grow, fill]5[grow, fill]","[40::,fill]"));
-		
+		setBorder(BorderFactory.createCompoundBorder(
+				BorderFactory.createEtchedBorder(),
+				BorderFactory.createEmptyBorder(10,10,10,10)
+		));
+
 		add(name);
 		add(score, "wrap");
 		add(plusBig);

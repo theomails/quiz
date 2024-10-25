@@ -1,23 +1,26 @@
 package com.redflex.quiz;
 
-import java.awt.Dimension;
+import com.formdev.flatlaf.FlatIntelliJLaf;
+import net.miginfocom.swing.MigLayout;
+
+import javax.swing.*;
+import javax.swing.border.EmptyBorder;
+import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-
-import com.alee.laf.WebLookAndFeel;
-
-import net.miginfocom.swing.MigLayout;
 
 public class Main extends JFrame{
 	private static final long serialVersionUID = 1L;
 	
 	
 	public static void main(String[] args) {
-		WebLookAndFeel.install();
-		
+		try {
+			UIManager.setLookAndFeel(new FlatIntelliJLaf());
+		} catch (Exception e) {
+			System.err.println("Failed to initialize FlatLaf look and feel");
+			e.printStackTrace();
+		}
+
 		Main main = new Main();
 		main.init();
 	}

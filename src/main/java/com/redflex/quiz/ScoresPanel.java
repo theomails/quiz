@@ -1,6 +1,6 @@
 package com.redflex.quiz;
 
-import javax.swing.JPanel;
+import javax.swing.*;
 
 import net.miginfocom.swing.MigLayout;
 
@@ -20,6 +20,7 @@ public class ScoresPanel extends JPanel{
 	
 	public void init() {
 		setLayout(new MigLayout("","[grow, fill]10[grow, fill]10[grow, fill]10[grow, fill]10[grow, fill]","[]"));
+		setBorder(BorderFactory.createEtchedBorder());
 		
 		add(a);
 		add(b);

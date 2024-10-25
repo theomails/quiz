@@ -31,7 +31,7 @@ public class DirsPanel extends JPanel{
 		File[] directories = root.listFiles(new FileFilter() {
 		    @Override
 		    public boolean accept(File file) {
-		        return file.isDirectory();
+		        return file.isDirectory()  && !file.getName().startsWith(".");
 		    }
 		});
 		
